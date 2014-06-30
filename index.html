@@ -9,17 +9,6 @@ var pluginUrl =
 _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
 _gaq.push(['_setAccount', 'UA-41306626-2']);
 
-var string = document.URL;
-if (string.match(/github\.io/i)){
-  _gaq.push(['_setDomainName', 'github.io']);
-} else if (string.match(/episerver-hosting\.com/i)){
-  _gaq.push(['_setDomainName', 'episerver-hosting.com']);
-} else {
-  _gaq.push(['_setDomainName', 'nfumutual.co.uk']);
-  
-}
-
-_gaq.push(['_setAllowLinker', true]);
 _gaq.push(['_trackPageview']);
 
 (function () {

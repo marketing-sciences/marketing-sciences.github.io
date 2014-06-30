@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script type="text/javascript">
+<body>
+<script>
+    dataLayer = [{
+        'pageTitle': 'Small Luxury Hotels of the World | Boutique Hotels & Resorts | slh.com',
+        'siteLanguage': 'en-gb',
+        'hotelId': 'IPNTDR', // trust code
+        'hotelDestination': 'London, England, UK',
+        'pageCategory': 'Hotels',
+        'userMembership': 'Premium',
+        'transactionId': '75560841', // booking reference
+        'transactionAffiliation': 'Small Luxury Hotels',
+        'transactionTotal': 16065.00, // total transaction amount including taxes
+        'transactionTax': 0.00, // tax amount
+        'transactionShipping': 0.00, // credit card charges if applicable
+        'transactionCurrency': 'USD', // local currency code
+        'transactionProducts': [{
+            'sku': 'IPNTDR', // trust code (currently this is internal reference)
+            'name': 'Penthouse Suite', // room type
+            'category': 'The Norman Tel Aviv', // hotel name
+            'price': 16065.00, // room price
+            'quantity': 9 // number of nights booked
+        }]
+    }];
+</script>		
 
-var _gaq = _gaq || [];
-var pluginUrl =
-'//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-_gaq.push(['_setAccount', 'UA-41306626-2']);
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TSVB5J');</script>
+<!-- End Google Tag Manager -->
 
-var string = document.URL;
-if (string.match(/github\.io/i)){
-  _gaq.push(['_setDomainName', 'github.io']);
-} else if (string.match(/episerver-hosting\.com/i)){
-  _gaq.push(['_setDomainName', 'episerver-hosting.com']);
-} else {
-  _gaq.push(['_setDomainName', 'nfumutual.co.uk']);
-  
-}
+<h1>Marketing Sciences London</h1>
+<p>I'm hosted with GitHub Pages.</p>
 
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_trackPageview']);
+<button onclick="dataLayer.push({'event': 'hotelQuickview'});">Hotel Quickview</button>
 
-(function () {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  
-})();
-  
-</script>
-</head>
+<button onclick="dataLayer.push({
+     'productId': 'HUSYDKB',
+     'event': 'productClick'});">Click me I'm a Product</button>
 
-
+</body>
 </html>
 
 

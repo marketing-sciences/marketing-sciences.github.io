@@ -27,67 +27,6 @@
     }];
 </script>		
 
-<script>
-// Product impressions are sent by pushing an impressions object
-// containing one or more impressionFieldObjects.
-dataLayer.push({
-  'ecommerce': {
-    'currencyCode': 'GBP', // local currency code
-    'impressions': [
-     {
-       'name': 'Injidup Spa Retreat', // hotel name
-       'id': 'HUPERIR', // trust code
-       'price': '360.00', // from XXX per night (if not available for chosen date show 0.00)
-       'brand': '',
-       'category': '',
-       'variant': '',
-       'list': 'Beach Resort, Australia', // list search criteria
-       'position': 1
-     },
-     {
-       'name': 'Kims Beach Hideaway',
-       'id': 'HUSYDKB',
-       'price': '432.00',
-       'brand': '',
-       'category': '',
-       'variant': '',
-       'list': 'Beach Resort, Australia',
-       'position': 2
-     }]
-  }
-});
-</script>
-
-<script>
-/**
- * Call this function when a user clicks on a product link. This function uses the event
- * callback datalayer variable to handle navigation after the ecommerce data has been sent
- * to Google Analytics.
- * @param {Object} productObj An object representing a product.
- */
-function(productObj) {
-  dataLayer.push({
-    'event': 'productClick',
-    'ecommerce': {
-      'click': {
-        'actionField': {'list': 'Search Results'},      // Optional list property.
-        'products': [{
-          'name': productObj.name,                      // Name or ID is required.
-          'id': productObj.id,
-          'price': productObj.price,
-          'brand': productObj.brand,
-          'category': productObj.cat,
-          'variant': productObj.variant
-         }]
-       }
-     },
-     'eventCallback': function() {
-       document.location = productObj.url
-     }
-  });
-}
-</script>
-
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

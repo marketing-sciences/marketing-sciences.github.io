@@ -47,3 +47,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </body>
 </html>
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+var pluginUrl =
+'//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-41306626-2']);
+
+if (location.indexOf('github.io') > -1){
+  _gaq.push(['_setDomainName', 'github.io']);
+} else if ((location.indexOf('episerver-hosting.com') > -1){
+  _gaq.push(['_setDomainName', 'episerver-hosting.com']);
+} else {
+  _gaq.push(['_setDomainName', 'nfumutual.co.uk']);
+  
+}
+
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+})();
+  
+</script>
+

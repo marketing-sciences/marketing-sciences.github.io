@@ -103,8 +103,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <button onclick="dataLayer.push({'event': 'hotelQuickview'});">Hotel Quickview</button>
 
-<button onclick="dataLayer.push({'event': 'productClick', 'productId': 'HUSYDKB});">Click me I'm a Product</button>
-
+<button onclick="dataLayer.push({
+     'productId': 'HUSYDKB',
+     'event': 'productClick'});">Click me I'm a Product</button>
 
 </body>
 </html>

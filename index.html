@@ -2,44 +2,30 @@
 <html>
 <body>
 <script>
-dataLayer = [{
-  'pageTitle': 'Small Luxury Hotels of the World | Boutique Hotels & Resorts | slh.com',
-  'siteLanguage': 'en-gb',
-  'hotelId': 'IPNTDR', // hotel trust code (if not applicable string should be blank)
-  'hotelDestination': 'London, England, UK',
-  'pageCategory': 'Hotels', // if not applicable string should be blank
-  'isClub': 'yes', // on successful login
-  'isAgent' 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
-  'searchFilter': '?destination=italy&hotelType=spa'
-  
-}];
-  
+    dataLayer = [{
+        'pageTitle': '/?q=test',
+        'siteLanguage': 'en-gb',
+        'hotelId': 'IPNTDR', // trust code
+        'hotelDestination': 'London, England, UK',
+        'pageCategory': 'Hotels',
+        'userCategory': 'Club Premium', // if agent trigger on successful login
+        'searchFilter': '/?destination=italy&hotelType=spa',
+        'transactionId': '75560841', // booking reference
+        'transactionAffiliation': 'Small Luxury Hotels',
+        'transactionTotal': 16065.00, // total transaction amount including taxes
+        'transactionTax': 0.00, // tax amount
+        'transactionShipping': 0.00, // credit card charges if applicable
+        'transactionCurrency': 'USD', // local currency code
+        'transactionProducts': [{
+            'sku': 'IPNTDR', // trust code (currently this is internal reference)
+            'name': 'Penthouse Suite', // room type
+            'category': 'The Norman Tel Aviv', // hotel name
+            'price': 16065.00, // room price
+            'quantity': 9 // number of nights booked
+        }]
+    }];
 </script>		
 
-<script>
-dataLayer = [{
-  'transactionId': '76990100', // booking reference (should be identical in SalesForce)
-  'transactionAffiliation': 'Small Luxury Hotels', // default
-  'transactionTotal': 12253.36, // total transaction amount (inc. tax and shipping)
-  'transactionTax': 0.00, // tax amount
-  'transactionShipping': 181.08, // credit card charges (if applicable)
-  'transactionCoupon': 'CLUB SLH OFFER' //currently as affiliation
-  'transactionCurrency': 'USD', // local currency code
-  'transactionProducts': [{
-    'sku': 'DLX', // room type code
-    'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
-    'brand': 'IPNTDR', // hotel trust code
-    'category': 'Banke Hotel', // hotel name
-    'variant': 'Deluxe Room', // room type
-    'price': 16065.00, // room price
-    'quantity': 9, // number of nights booked
-    'coupon': 'NRXQ' // rate code
-
-    }]
-  
-}];
-  
-</script>	
 
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"

@@ -12,7 +12,8 @@ dataLayer = [{
   'isClub': 'yes', // on successful login
   'isAgent': 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
 //  'searchFilter': '?destination=italy&hotelType=spa',
-  'ecommerce': {
+ 'ecommerce': {
+    'currencyCode': 'USD', // local currency code
     'purchase': {
       'actionField': {
         'id': '123456',  // booking reference (should be identical in SalesForce)
@@ -20,7 +21,6 @@ dataLayer = [{
         'revenue': '12253.36', // total transaction amount (inc. tax and shipping)
         'tax':'0.00', // not applicable
         'shipping': '0.00', // not applicable
-        'currencyCode': 'USD', // local currency code
         'coupon': 'CLUB SLH OFFER' //rate description
       },
       'products': [{   
@@ -36,7 +36,7 @@ dataLayer = [{
     }
   }
 }];  
-</script>		
+</script>	
 
 
 <!-- Google Tag Manager -->

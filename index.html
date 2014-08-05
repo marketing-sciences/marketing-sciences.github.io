@@ -12,27 +12,30 @@ dataLayer = [{
   'isClub': 'yes', // on successful login
   'isAgent': 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
 //  'searchFilter': '?destination=italy&hotelType=spa',
-  'transactionId': '76990100', // booking reference (should be identical in SalesForce)
-  'transactionAffiliation': 'Small Luxury Hotels', // default
-  'transactionTotal': 12253.36, // total transaction amount (inc. tax and shipping)
-  'transactionTax': 0.00, // tax amount
-  'transactionShipping': 181.08, // credit card charges (if applicable)
-  'transactionCoupon': 'CLUB SLH OFFER', //rate description
-  'transactionCurrency': 'USD', // local currency code
-  'transactionProducts': [{
-    'sku': 'DLXIPNTDR', // room type code
-    'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
-    'brand': 'IPNTDR', // hotel trust code
-    'category': 'Banke Hotel', // hotel name
-    'variant': '2 adults + 2 children', // customer details
-    'price': 16065.00, // room price
-    'quantity': 9, // number of nights booked
-    'coupon': 'CLUB SLH OFFER' // rate description
-
-    }]
-  
-}];
-  
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'id': '76990100',  // booking reference (should be identical in SalesForce)
+        'affiliation': 'Small Luxury Hotels',
+        'revenue': '12253.36', // total transaction amount (inc. tax and shipping)
+        'tax':'0.00', // not applicable
+        'shipping': '0.00', // not applicable
+        'currencyCode': 'USD', // local currency code
+        'coupon': 'CLUB SLH OFFER' //rate description
+      },
+      'products': [{   
+        'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
+        'id': 'DLXIPNTDR', // room type code
+        'price': 16065.00, // room price
+        'brand': 'IPNTDR', // hotel trust code
+        'category': 'Banke Hotel', // hotel name
+        'variant': '2 adults + 2 children', // customer details
+        'quantity': 9, // number of nights booked
+        'coupon': 'CLUB SLH OFFER' // rate description
+      }]
+    }
+  }
+});  
 </script>		
 
 

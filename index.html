@@ -13,6 +13,30 @@ dataLayer = [{
   'isAgent': 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
 //  'searchFilter': '?destination=italy&hotelType=spa',
   'ecommerce': {
+    'currencyCode': 'USD', // local currency code
+    'purchase': {
+      'actionField': {
+        'id': '76990100',  // booking reference (should be identical in SalesForce)
+        'affiliation': 'Hotel Booking ',
+        'revenue': '12072.28', // total transaction amount (inc. tax and shipping)
+        'tax':'0.00', // not applicable
+        'shipping': '0.00', // delivery charges
+        'coupon': 'CLUB SLH OFFER'
+        
+      },
+      'products': [{
+        'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
+        'id': 'DLXNRXQ', // room type code
+        'price': '12072.28', // room price
+        'brand': 'IPNTDR', // hotel trust code
+        'category': 'Banke Hotel', // hotel name
+        'variant': '2 adults + 2 children', // customer details
+        'quantity': 20, // number of nights booked
+        'coupon': 'CLUB SLH OFFER' // rate description
+        }]
+      
+    }
+/*  'ecommerce': {
     'currencyCode': 'EUR', // local currency code
     'purchase': {
       'actionField': {
@@ -35,7 +59,7 @@ dataLayer = [{
         'coupon': '' // rate description
         }]
       
-    }
+    } */
     
   }
   

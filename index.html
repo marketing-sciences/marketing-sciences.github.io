@@ -38,6 +38,34 @@ dataLayer = [{
 }];  
 </script>	
 
+<script>
+dataLayer = [{
+ 'ecommerce': {
+    'currencyCode': 'EUR', // local currency code
+    'purchase': {
+      'actionField': {
+        'id': '123456',  // booking reference (should be identical in SalesForce)
+        'affiliation': 'Gift Certificates',
+        'revenue': '58.75', // total transaction amount (inc. tax and shipping)
+        'tax':'0.00', // not applicable
+        'shipping': '8.75', // delivery charges
+        'coupon': ''
+      },
+      'products': [{   
+        'name': '2 Night Gourmet Experiences', // hotel name + room type
+        'id': '78910', // room type code
+        'price': '50.00', // room price
+        'brand': 'Gift Certificates', // hotel trust code
+        'category': 'Experiences', // hotel name
+        'variant': 'Gold Tier hotel', // customer details
+        'quantity': 1, // number of nights booked
+        'coupon': '' // rate description
+      }]
+    }
+  }
+}];  
+</script>	
+
 
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"

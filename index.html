@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+<body>
 <script>
 dataLayer = [{
-'pageTitle': 'Small Luxury Hotels of the World | Boutique Hotels &amp; Resorts | slh.com',
-'domain': 'slh.com', // should not include subdomain
-'hostname': 'new.slh.com', // domain + subdomain (i.e. slhbooker.test.fortunecookie.com, new.slh.com, booking.slh.com, www.slh.com...)
-'url' : 'http://www.slh.com/', // hostname + request URI
-'siteLanguage': 'en-gb',
-'hotelId': '', // hotel trust code (if not applicable string should be blank)
-'hotelDestination': '',
-'pageCategory': 'HomePage', // if not applicable string should be blank
-'isClub': 'false', // on successful login
-'isAgent': 'false', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
-'clubID': '66606903', // see triggers in "Club Member ID" tab
+  'pageTitle': 'Small Luxury Hotels of the World | Boutique Hotels & Resorts | slh.com',
+  'domain': 'slh.com',
+  'siteLanguage': 'en-gb',
+  'hotelId': 'IPNTDR', // hotel trust code (if not applicable string should be blank)
+  'hotelDestination': 'London, England, UK',
+  'pageCategory': 'Hotels', // if not applicable string should be blank
+  'isClub': 'yes', // on successful login
+  'isAgent': 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
+  'clubId': '12345678',
+  'ecommerce': {
+    'currencyCode': 'USD', // local currency code
+    'purchase': {
+      'actionField': {
+        'id': '76990100',  // booking reference (should be identical in SalesForce)
+        'affiliation': 'Hotel Booking',
+        'revenue': '12072.28', // total transaction amount (inc. tax and shipping)
+        'tax':'0.00', // not applicable
+        'shipping': '0.00', // delivery charges
+        'coupon': 'CLUB SLH OFFER'
+        
+      },
+      'products': [{
+        'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
+        'id': 'DLXNRXQ', // room type code
+        'price': '12072.28', // room price
+        'brand': 'IPNTDR', // hotel trust code
+        'category': 'Banke Hotel', // hotel name
+        'variant': '2 adults + 2 children', // customer details
+        'quantity': 20, // number of nights booked
+        'coupon': 'CLUB SLH OFFER' // rate description
+        }]
+      
+    }
+/*  'ecommerce': {
+    'currencyCode': 'EUR', // local currency code
+    'purchase': {
+      'actionField': {
+        'id': '123456',  // booking reference (should be identical in SalesForce)
+        'affiliation': 'Gift Certificates',
+        'revenue': '58.75', // total transaction amount (inc. tax and shipping)
+        'tax':'0.00', // not applicable
+        'shipping': '8.75', // delivery charges
+        'coupon': ''
+        
+      },
+      'products': [{
+        'name': '2 Night Gourmet Experiences', // hotel name + room type
+        'id': '78910', // room type code
+        'price': '50.00', // room price
+        'brand': 'Gift Certificates', // hotel trust code
+        'category': 'Experiences', // hotel name
+        'variant': 'Gold Tier hotel', // customer details
+        'quantity': 1, // number of nights booked
+        'coupon': '' // rate description
+        }]
+      
+    } */
+    
+  }
+  
 }];
-</script>
-</head>
+  
+</script>	
 
-<body>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -28,8 +75,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TSVB5J');</script>
-<!-- End Google Tag Manager -->																
-
+<!-- End Google Tag Manager -->
 
 <h1>Marketing Sciences London</h1>
 <p>I'm hosted with GitHub Pages.</p>
@@ -40,7 +86,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </body>
 </html>
-
-
-
-

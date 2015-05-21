@@ -1,72 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
-<script>
-dataLayer = [{
-  'pageTitle': 'Small Luxury Hotels of the World | Boutique Hotels & Resorts | slh.com',
-  'domain': 'slh.com',
-  'siteLanguage': 'en-gb',
-  'hotelId': 'IPNTDR', // hotel trust code (if not applicable string should be blank)
-  'hotelDestination': 'London, England, UK',
-  'pageCategory': 'Hotels', // if not applicable string should be blank
-  'isClub': 'yes', // on successful login
-  'isAgent': 'no', // on successful login OR when "utm_medium=email&utm_source=agent" in URL (condition subject to change)
-//  'searchFilter': '?destination=italy&hotelType=spa',
-  'ecommerce': {
-    'currencyCode': 'USD', // local currency code
-    'purchase': {
-      'actionField': {
-        'id': '76990100',  // booking reference (should be identical in SalesForce)
-        'affiliation': 'Hotel Booking',
-        'revenue': '12072.28', // total transaction amount (inc. tax and shipping)
-        'tax':'0.00', // not applicable
-        'shipping': '0.00', // delivery charges
-        'coupon': 'CLUB SLH OFFER'
-        
-      },
-      'products': [{
-        'name': 'Banke Hotel + Deluxe Room', // hotel name + room type
-        'id': 'DLXNRXQ', // room type code
-        'price': '12072.28', // room price
-        'brand': 'IPNTDR', // hotel trust code
-        'category': 'Banke Hotel', // hotel name
-        'variant': '2 adults + 2 children', // customer details
-        'quantity': 20, // number of nights booked
-        'coupon': 'CLUB SLH OFFER' // rate description
-        }]
-      
-    }
-/*  'ecommerce': {
-    'currencyCode': 'EUR', // local currency code
-    'purchase': {
-      'actionField': {
-        'id': '123456',  // booking reference (should be identical in SalesForce)
-        'affiliation': 'Gift Certificates',
-        'revenue': '58.75', // total transaction amount (inc. tax and shipping)
-        'tax':'0.00', // not applicable
-        'shipping': '8.75', // delivery charges
-        'coupon': ''
-        
-      },
-      'products': [{
-        'name': '2 Night Gourmet Experiences', // hotel name + room type
-        'id': '78910', // room type code
-        'price': '50.00', // room price
-        'brand': 'Gift Certificates', // hotel trust code
-        'category': 'Experiences', // hotel name
-        'variant': 'Gold Tier hotel', // customer details
-        'quantity': 1, // number of nights booked
-        'coupon': '' // rate description
-        }]
-      
-    } */
-    
-  }
-  
-}];
-  
-</script>	
-
+<head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -80,8 +14,9 @@ ga('create', 'UA-52037596-3', 'auto', {'name': 'newTracker'});  // QA
 ga('send', 'pageview', {name: newTracker);
 
 </script>
+</head>
 
-
+<body>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSVB5J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
